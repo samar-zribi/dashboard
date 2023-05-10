@@ -129,3 +129,15 @@ customers.forEach((customer) => {
   `;
   productList.appendChild(customerDiv);
 });
+
+//get the product from the customers data
+function getProduct() {
+  var products = [];
+  for (var i = 0; i < customers.length; i++) {
+    if (!products.includes(customers[i].productPurchase)) {
+      products.push(customers[i].productPurchase);
+    }
+  }
+  return products;
+}
+getProduct();
