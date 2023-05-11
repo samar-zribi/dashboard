@@ -163,26 +163,4 @@ customers.forEach((customer) => {
 });
 
 //get the product from the customers data
-function getProduct(customers) {
-  var uniqueProd = [];
 
-  for (var i = 0; i < customers.length; i++) {
-    for (var key in customers[i] ){
-      for (var j = 0; j < customers[i][key].length; j++){
-        //console.log("und",customers[i].productPurchase[j])
-        if (!uniqueProd.includes(customers[i].productPurchase[j]) && typeof(customers[i].productPurchase[j])!== undefined){
-          console.log("typeOf",typeof(customers[i].productPurchase[j])!== undefined)
-          uniqueProd.push(customers[i].productPurchase[j]);
-    
-       
-        }
-      }
-     
-    }
-    
-    
-  }
- // console.log(uniqueProd)
-  return uniqueProd;
-}
-getProduct(customers);
