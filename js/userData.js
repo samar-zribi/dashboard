@@ -137,6 +137,9 @@ var customers = [
   },
 ];
 
+
+
+
 var deleteButtons = document.querySelectorAll("#deleteBtn");
 
 deleteButtons.forEach((button, index) => {
@@ -161,6 +164,8 @@ customers.forEach((customer) => {
   `;
   productList.appendChild(customerDiv);
 });
+
+
 
 //get the product from the customers data
 function getProduct(customers) {
