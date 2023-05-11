@@ -20,6 +20,7 @@
     margin-right: 6%;
 }
 #container-title{
+    font-family: monospace;
     font-size: small;
     color: #9a9a9a;
 }
@@ -35,6 +36,11 @@
 
       display: flex;
       flex-direction: column;
+}
+#logP{
+    font-family: monospace;
+    font-size: small;
+    color: #9a9a9a;
 }
 #input{
     width: 100%;
@@ -65,4 +71,7 @@
     text-align: center;
     color: #FCFCFC;
     transition: all .2s;
+}
+#error{
+    
 }

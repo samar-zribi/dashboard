@@ -8,7 +8,8 @@
     <title>LogIn</title>
     <title>Two-Color Background</title>
     <link rel="stylesheet" href="../css/logIn.css">
-
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 
@@ -24,10 +25,11 @@
                
                 <input type="password" id="input" value="password">
     
-                <input id="Btn-Input" type="submit" value="Login">
+                <input id="Btn-Input" type="button" value="Login">
+                <p id="error"> wrong password try again!</p>
     
             </form>
-            <p>This site is protected by reCAPTCHA and the Google Privacy Policy.</p>
+            <p id="logP">This site is protected by reCAPTCHA and the Google Privacy Policy.</p>
         </div>
         
         <div>
