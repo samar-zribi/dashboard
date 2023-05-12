@@ -139,6 +139,10 @@ var customers = [
 
 
 
+for (var i=0 ; i<customers.length ; i++){
+var customer=customers[i].fullName
+console.log(customer)
+}
 
 var deleteButtons = document.querySelectorAll("#deleteBtn");
 
@@ -193,3 +197,19 @@ function getProduct(customers) {
 
 getProduct(customers);
 console.log(customers)
+
+
+var deleteButtons = document.querySelectorAll("#deleteBtn");
+deleteButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    var customerDivs = document.querySelectorAll(".customer");
+    customerDivs[index].remove();
+  });
+});
+editBtn.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    var customerDivs = document.querySelectorAll(".customer");
+    customerDivs[index].fullName = $('#name').val()
+    customerDivs[index].emailAddress = $('#email').val()
+  });
+});

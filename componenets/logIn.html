@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/logIn.css">
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,13 +20,12 @@
             <span id="title"> Sign In</span>
             <form class="login-container" action="login">
            
-                <input type="text" id="input" value="">
+                <input type="username" id="username" value="">
     
                
-                <input type="password" id="input" value="password">
+                <input type="password" id="password" value="password">
     
                 <input id="Btn-Input" type="button" value="Login">
-                <p id="error"> wrong password try again!</p>
     
             </form>
             <p id="logP">This site is protected by reCAPTCHA and the Google Privacy Policy.</p>
@@ -36,6 +35,7 @@
             <img id="gif"src="..//assets/login.gif" alt="sign in"/>
         </div>
     </div>
+    <script src="./../JS/passWord.js"></script>
 </body>
 
 </html>
